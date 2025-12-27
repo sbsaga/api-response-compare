@@ -1,0 +1,74 @@
+{
+  "name": "api-response-compare",
+  "displayName": "API Response Compare",
+  "description": "Compare responses of two APIs (GET / POST) directly inside VS Code",
+  "version": "1.0.0",
+  "publisher": "sbsaga",
+  "license": "MIT",
+  "icon": "images/icon.jpg",
+
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+
+  "categories": [
+    "Testing",
+    "Other"
+  ],
+
+  "keywords": [
+    "api",
+    "compare",
+    "diff",
+    "json",
+    "rest",
+    "testing"
+  ],
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sbsaga/api-response-compare"
+  },
+
+  "homepage": "https://github.com/sbsaga/api-response-compare",
+
+  "bugs": {
+    "url": "https://github.com/sbsaga/api-response-compare/issues"
+  },
+
+  "activationEvents": [
+    "onCommand:apiCompare.start"
+  ],
+
+  "main": "./out/extension.js",
+
+  "contributes": {
+    "commands": [
+      {
+        "command": "apiCompare.start",
+        "title": "Compare Two APIs"
+      }
+    ]
+  },
+
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src",
+    "prepublish": "npm run compile"
+  },
+
+  "dependencies": {
+    "axios": "^1.6.2",
+    "deep-diff": "^1.0.2"
+  },
+
+  "devDependencies": {
+    "@types/deep-diff": "^1.0.5",
+    "@types/node": "^18.19.0",
+    "@types/vscode": "^1.85.0",
+    "eslint": "^9.39.1",
+    "typescript": "^5.9.3"
+  }
+}
