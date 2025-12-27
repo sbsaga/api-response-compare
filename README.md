@@ -109,7 +109,7 @@ code --install-extension sbsaga.api-response-compare
 
 ## 📷 Screenshots / Demo
 
-![Screenshot](images/logo.jpg)  
+![Screenshot](images/icon.jpg)  
 *Instantly compare API responses in a professional view.*
 
 ---
