@@ -2,7 +2,7 @@
   "name": "api-response-compare",
   "displayName": "API Response Compare",
   "description": "Compare responses of two APIs (GET / POST) directly inside VS Code",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "sbsaga",
   "license": "MIT",
   "icon": "images/icon.jpg",
