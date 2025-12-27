@@ -2,20 +2,17 @@
   "name": "api-response-compare",
   "displayName": "API Response Compare",
   "description": "Compare responses of two APIs (GET / POST) directly inside VS Code",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "sbsaga",
   "license": "MIT",
   "icon": "images/icon.jpg",
-
   "engines": {
     "vscode": "^1.85.0"
   },
-
   "categories": [
     "Testing",
     "Other"
   ],
-
   "keywords": [
     "api",
     "compare",
@@ -24,24 +21,18 @@
     "rest",
     "testing"
   ],
-
   "repository": {
     "type": "git",
     "url": "https://github.com/sbsaga/api-response-compare"
   },
-
   "homepage": "https://github.com/sbsaga/api-response-compare",
-
   "bugs": {
     "url": "https://github.com/sbsaga/api-response-compare/issues"
   },
-
   "activationEvents": [
     "onCommand:apiCompare.start"
   ],
-
   "main": "./out/extension.js",
-
   "contributes": {
     "commands": [
       {
@@ -50,7 +41,6 @@
       }
     ]
   },
-
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
@@ -58,12 +48,10 @@
     "lint": "eslint src",
     "prepublish": "npm run compile"
   },
-
   "dependencies": {
     "axios": "^1.6.2",
     "deep-diff": "^1.0.2"
   },
-
   "devDependencies": {
     "@types/deep-diff": "^1.0.5",
     "@types/node": "^18.19.0",
